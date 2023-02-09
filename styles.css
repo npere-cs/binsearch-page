@@ -1,0 +1,128 @@
+/*
+  This is the styles.css page associated with binary search site. It creates a minimalist theme
+  with aquamarine accents. Also creates a color key for certain classes of elements for ease of
+  accessibility.
+*/
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #7FFFD4;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+hr {
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 60px;
+}
+
+input, button {
+  border: solid 2px #add8e6;
+}
+
+header > img {
+  margin: 5px 5px 5px 15px;
+  width: 35px;
+}
+
+header > span {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  width: 25vw;
+  justify-content: space-evenly;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 25px;
+  margin: 5px;
+}
+
+nav ul, header, #elems, #search > section > section, #visualizer > section, #visualizer {
+  display: flex;
+}
+
+.low {
+  background-color: #ffa07a;
+}
+
+.high {
+  background-color: #87cefa;
+}
+
+.mid {
+  background-color: #ffff00;
+}
+
+.examined {
+  background-color: #808080;
+}
+
+.found {
+  background-color: #008000;
+}
+
+.error-msg {
+  color: #ff0000;
+  text-shadow: 0ch;
+}
+
+.hide {
+  display: none;
+}
+
+#elems div, #search div {
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 5vw;
+}
+
+#visualizer {
+  flex-direction: column;
+}
+
+#visualizer > section {
+  margin-bottom: 15px;
+}
+
+#search > section {
+  margin-bottom: 15px;
+}
+
+#elems div input {
+  width: 90%;
+}
+
+#description {
+  margin: auto;
+  width: 80%;
+  font-size: 18px;
+}
+
+#elems, #search > section > section, #visualizer > section, #visualizer {
+  justify-content: center;
+}
+
+#search, #size-input, #element-input > p, #description, h1 {
+  text-align: center;
+}

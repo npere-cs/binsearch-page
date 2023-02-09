@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+  This is the index.html page associated with the binary search site. It provides structure for
+  information on the binary search algorithm with links to other categories of algorithms of
+  interest. In addition, it contains fields for text entry and buttons for interactivity.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Binary Search: Visualized</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/graph.png" alt="Network graph with six nodes">
+      <!--
+        Image retrieved from: https://bit.ly/3EwSPIo
+      -->
+      <span>Algorithms</span>
+      <nav>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Search_algorithm">Search</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm">Sorting</a></li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Category:Graph_algorithms">Graph</a>
+          </li>
+          <li><a href="https://en.wikipedia.org/wiki/Merge_algorithm">Merge</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Binary Search</h1>
+      <p id="description">
+        The Binary Search Algorithm takes a sorted array of items and searches for a desired
+        element in O(log(N)) time where N is the size of the array. In particular, it keeps track
+        of a lower, middle, and upper position in the array. This allows the search algorithm to
+        discard half of the current search area after every iteration, hence why it's time
+        complexity is in O(log(N)).
+      </p>
+      <hr>
+    </section>
+
+    <section id="size-input">
+      <p>
+        Number of elements to search through (between 1 and 20):
+      </p>
+      <input type="number" min="1" max="20">
+      <!-- Empty for error message reporting -->
+      <p class="error-msg"></p>
+      <hr>
+    </section>
+
+    <section id="element-input">
+      <p>Please enter your elements (any order):</p>
+      <div id="elems">
+        <div>
+          <input type="number">
+        </div>
+        <!-- Additional divs added here from interactivity -->
+      </div>
+    </section>
+
+    <section id="search">
+      <p>Element to search for: </p>
+      <input type="number">
+      <button type="button">Search!</button>
+      <!-- Empty for error message reporting -->
+      <p class="error-msg"></p>
+      <hr>
+      <section class="hide">
+        <p>Key:</p>
+        <section>
+          <div class="low">
+            <span>Lower Index</span>
+          </div>
+          <div class="mid">
+            <span>Middle Index</span>
+          </div>
+          <div class="high">
+            <span>Higher Index</span>
+          </div>
+          <div class="found">
+            <span>Element Found</span>
+          </div>
+        </section>
+        <section id="visualizer">
+          <p>Visual:</p>
+          <section>
+            <!-- The binary search visual will execute here -->
+          </section>
+        </section>
+        <button type="button">Step</button>
+        <button type="button" class="hide">Reset</button>
+      </section>
+    </section>
+  </body>
+</html>
